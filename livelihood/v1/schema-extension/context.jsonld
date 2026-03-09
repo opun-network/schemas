@@ -12,6 +12,7 @@
     "ExperienceLevel": "opun:ExperienceLevel",
     "EducationLevel": "opun:EducationLevel",
     "ApplicationStatus": "opun:ApplicationStatus",
+    "FormVerificationStatus": "opun:FormVerificationStatus",
     "InterviewType": "opun:InterviewType",
     "Location": "opun:Location",
     "ExperienceRequired": "opun:ExperienceRequired",
@@ -103,6 +104,8 @@
     "maximum": "opun:maximum",
     "period": "opun:period",
 
+    "formId": "opun:formId",
+    "formUrl": "opun:formUrl",
     "mimeType": "opun:mimeType",
     "formData": "opun:formData",
     "resubmit": "opun:resubmit",
@@ -140,11 +143,6 @@
 
     "applicationId": "opun:applicationId",
     "appliedDate": "opun:appliedDate",
-    "submittedDocuments": "opun:submittedDocuments",
-
-    "receivedApplicationForm": "opun:receivedApplicationForm",
-    "formSchema": "opun:formSchema",
-    "checksum": "opun:checksum",
-    "submittedApplicationFormData": "opun:submittedApplicationFormData"
+    "submittedDocuments": "opun:submittedDocuments"
   }
 }

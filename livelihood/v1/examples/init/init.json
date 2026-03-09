@@ -1,0 +1,64 @@
+{
+  "context": {
+    "action": "init",
+    "bap_id": "bap.opungram.com",
+    "bap_uri": "https://bap-api.opungram.com/agache/agent/network/",
+    "bpp_id": "bpp.opunseva.com",
+    "bpp_uri": "https://bpp-api.opunseva.com/agache/agent/network/",
+    "domain": "opun:livelihood",
+    "message_id": "MSG_57f1ebc9",
+    "timestamp": "2026-03-09T20:31:21.241159+05:30",
+    "transaction_id": "APP_1773068481_14e94076",
+    "ttl": "PT30S",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "@context": [
+        "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+        "https://raw.githubusercontent.com/opun/opunnetwork-specification/main/schema/livelihood/v1/context.jsonld"
+      ],
+      "@type": "beckn:Order",
+      "beckn:buyer": {
+        "@type": "beckn:Buyer",
+        "beckn:displayName": "Vikram Tarniprasad Acharya",
+        "beckn:email": "vikram@plotch.ai",
+        "beckn:id": "CUST_1767703710_70c4fb03",
+        "beckn:telephone": "9833933345"
+      },
+      "beckn:fulfillment": {
+        "@type": "beckn:Fulfillment",
+        "beckn:fulfillmentStatus": "DRAFT",
+        "beckn:id": "APP_1773068481_14e94076",
+        "beckn:mode": "DIGITAL"
+      },
+      "beckn:orderAttributes": {
+        "@context": "https://raw.githubusercontent.com/opun/opunnetwork-specification/main/schema/livelihood/v1/context.jsonld",
+        "@type": "opun:LivelihoodApplicationAttributes",
+        "opun:applicationForm": {
+          "@type": "opun:ApplicationForm",
+          "opun:formData": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xf:model xmlns:xf=\"http://www.w3.org/2002/xforms\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n  <xf:instance id=\"form-data\">\n    <data xmlns=\"\">\n      <notice_period></notice_period>\n      <willing_to_relocate></willing_to_relocate>\n      <primary_skills>python react</primary_skills>\n      <job_title>Accountant - Hearing Disability #6</job_title>\n      <full_name>Vikram Tarniprasad Acharya</full_name>\n      <email>vikram@plotch.ai</email>\n      <phone>9833933345</phone>\n      <current_location>Thane</current_location>\n      <total_experience>15</total_experience>\n      <expected_salary>624860</expected_salary>\n      <current_role_summary></current_role_summary>\n      <role_question_1></role_question_1>\n      <resume></resume>\n    </data>\n  </xf:instance>\n</xf:model>",
+          "opun:resubmit": false
+        },
+        "opun:applicationId": "APP_1773068481_14e94076",
+        "opun:appliedDate": "2026-03-09T00:00:00Z"
+      },
+      "beckn:orderItems": [
+        {
+          "beckn:orderedItem": {
+            "@type": "opun:JobOpportunity",
+            "beckn:id": "REQ_1769006173_df4729e9",
+            "beckn:provider": {
+              "beckn:id": "PRV_1769696624_fde9c424"
+            }
+          }
+        }
+      ],
+      "beckn:orderStatus": "DRAFT",
+      "beckn:seller": {
+        "@type": "beckn:Party",
+        "beckn:id": "PRV_1769696624_fde9c424"
+      }
+    }
+  }
+}

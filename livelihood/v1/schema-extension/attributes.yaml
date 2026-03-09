@@ -414,6 +414,7 @@ attributes:
     description: "Current status of job application"
     scope: Fulfillment.state
     values:
+      - DRAFT
       - APPLICATION_SUBMITTED
       - APPLICATION_RECEIVED
       - APPLICATION_UNDER_REVIEW
@@ -648,7 +649,7 @@ attributes:
     type: string
     description: "Status of form verification by provider"
     scope: Fulfillment
-    enum: ["VERIFIED", "PENDING", "REJECTED", "REQUIRES_CORRECTION"]
+    enum: ["VALID", "VERIFIED", "PENDING", "REJECTED", "REQUIRES_CORRECTION"]
     example: "PENDING"
 
   verificationNotes:

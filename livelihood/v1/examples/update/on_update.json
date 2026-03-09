@@ -1,0 +1,72 @@
+{
+  "context": {
+    "action": "on_update",
+    "bap_id": "bap.opungram.com",
+    "bap_uri": "https://bap-api.opungram.com/agache/agent/network",
+    "bpp_id": "bpp.opunseva.com",
+    "bpp_uri": "https://bpp-api.opunseva.com/agache/agent/network/",
+    "domain": "opun:livelihood",
+    "message_id": "6d0b3c51-c6b7-4731-bd67-721409f741d7",
+    "timestamp": "2026-03-09T20:38:00.142840+05:30",
+    "transaction_id": "APP_1773068481_14e94076",
+    "ttl": "PT30S",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "@type": "beckn:Order",
+      "beckn:acceptedOffers": [
+        {
+          "beckn:id": "APP_1773068481_14e94076",
+          "beckn:items": [
+            "REQ_1769006173_df4729e9"
+          ],
+          "beckn:provider": {
+            "beckn:id": "PRV_1766398782_74c3029b"
+          }
+        }
+      ],
+      "beckn:buyer": {
+        "@type": "beckn:Buyer",
+        "beckn:displayName": "Vikram Tarniprasad Acharya",
+        "beckn:email": "vikram@plotch.ai",
+        "beckn:id": "CUST_1767703710_70c4fb03",
+        "beckn:telephone": "9833933345"
+      },
+      "beckn:fulfillment": {
+        "@type": "beckn:Fulfillment",
+        "beckn:deliveryAttributes": {
+          "@type": "opun:LivelihoodFulfillmentAttributes",
+          "opun:applicationStatus": "IN_REVIEW",
+          "opun:notes": "Application in review"
+        },
+        "beckn:fulfillmentStatus": "IN_REVIEW",
+        "beckn:id": "APP_1773068481_14e94076",
+        "beckn:mode": "DIGITAL"
+      },
+      "beckn:id": "APP_1773068481_14e94076",
+      "beckn:orderAttributes": {
+        "@type": "opun:LivelihoodApplicationAttributes",
+        "opun:applicationId": "APP_1773068481_14e94076",
+        "opun:appliedDate": "2026-03-09T00:00:00Z"
+      },
+      "beckn:orderItems": [
+        {
+          "@type": "beckn:Item",
+          "beckn:orderedItem": {
+            "beckn:id": "REQ_1769006173_df4729e9",
+            "beckn:provider": {
+              "beckn:id": "PRV_1766398782_74c3029b"
+            }
+          }
+        }
+      ],
+      "beckn:orderStatus": "ACTIVE",
+      "beckn:seller": {
+        "@type": "beckn:Party",
+        "beckn:id": "PRV_1766398782_74c3029b"
+      }
+    },
+    "updateType": "STATUS_UPDATE"
+  }
+}

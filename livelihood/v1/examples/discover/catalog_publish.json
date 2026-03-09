@@ -1,0 +1,104 @@
+{
+  "context": {
+    "version": "2.0.0",
+    "action": "catalog",
+    "domain": "opun:livelihood",
+    "transaction_id": "776f1bc8-cc70-4453-9426-0611e037a4bd",
+    "message_id": "09df6d86-367d-4e32-9045-6a1b7f2b0ae3",
+    "timestamp": "2026-02-04T12:41:33.293465+05:30",
+    "bpp_id": "bpp.opunseva.com",
+    "bpp_uri": "https://bpp-api.opunseva.com/agache/agent/network/",
+    "ttl": "PT30S",
+    "schema_context": [
+      "https://raw.githubusercontent.com/opun/opunnetwork-specification/main/schema/livelihood/v1/context.jsonld"
+    ]
+    
+  },
+  "message": {
+    "catalogs": [
+      {
+        "@context": [
+          "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+          "https://raw.githubusercontent.com/opun/opunnetwork-specification/main/schema/livelihood/v1/context.jsonld"
+        ],
+        "@type": "beckn:Catalog",
+        "beckn:id": "PRV_1766398782_74c3029b",
+        "beckn:items": [
+          {
+            "@type": "beckn:Item",
+            "beckn:descriptor": {
+              "@type": "beckn:Descriptor",
+              "beckn:longDesc": "Perform duties as Accountant with inclusive workplace support",
+              "beckn:shortDesc": "new_position | FULL_TIME | Plotch | 2.0 years required | Bengaluru, Karnataka, India | HYBRID",
+              "schema:name": "Accountant - Dwarfism #36"
+            },
+            "beckn:id": "REQ_1769006632_58496224",
+            "beckn:itemAttributes": {
+              "@type": "opun:LivelihoodJobOpportunity",
+              "opun:accessibilityMetadata": {
+                "@type": "opun:AccessibilityMetadata",
+                "opun:providedAccommodations": {
+                  "@type": "opun:ProvidedAccommodations",
+                  "opun:support": [
+                    "Flexible hours",
+                    "Remote work options"
+                  ],
+                  "opun:tech": [
+                    "Assistive tools as required"
+                  ]
+                },
+                "opun:suitableDisabilityTypes": [
+                  {
+                    "@type": "opun:SuitableDisabilityType",
+                    "opun:category": "Dwarfism",
+                    "opun:code": "DWARFISM",
+                    "opun:fitLevel": "HIGH_MATCH",
+                    "opun:notes": "Role adapted for Dwarfism"
+                  }
+                ]
+              },
+              "opun:employmentType": "FULL_TIME",
+              "opun:experienceRequired": {
+                "@type": "opun:ExperienceRequired",
+                "opun:maximumYears": 2,
+                "opun:minimumYears": 2
+              },
+             
+              "opun:jobCode": "REQ_1769006632_58496224",
+              "opun:location": {
+                "@type": "opun:Location",
+                "opun:city": "Bengaluru",
+                "opun:country": "India",
+                "opun:pincode": "560001",
+                "opun:state": "Karnataka",
+                "opun:streetAddress": "Electronic City"
+              },
+             
+              "opun:positionType": "new_position",
+              "opun:priority": "medium",
+              
+              "opun:roleName": "Accountant",
+              "opun:salaryRange": {
+                "@type": "opun:SalaryRange",
+                "opun:currency": "INR",
+                "opun:maximum": 850797,
+                "opun:minimum": 594850,
+                "opun:period": "ANNUAL"
+              },
+              "opun:vacancies": 1,
+              "opun:workMode": "HYBRID"
+            }
+          }
+        ],
+        "beckn:provider": {
+          "@type": "beckn:Provider",
+          "beckn:descriptor": {
+            "@type": "beckn:Descriptor",
+            "schema:name": "Tech Supplies Inc"
+          },
+          "beckn:id": "PRV_1766398782_74c3029b"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "context": {
+    "action": "on_update",
+    "bap_id": "bap.opungram.com",
+    "bap_uri": "https://bap-api.opungram.com/agache/agent/network",
+    "bpp_id": "bpp.opunseva.com",
+    "bpp_uri": "https://bpp-api.opunseva.com/agache/agent/network/",
+    "domain": "opun:livelihood",
+    "message_id": "a24df7cd-8b04-4c6a-88dc-2f997cb05263",
+    "timestamp": "2026-03-09T20:40:50.208800+05:30",
+    "transaction_id": "APP_1773068481_14e94076",
+    "ttl": "PT30S",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "@type": "beckn:Order",
+      "beckn:acceptedOffers": [
+        {
+          "beckn:id": "APP_1773068481_14e94076",
+          "beckn:items": [
+            "REQ_1769006173_df4729e9"
+          ],
+          "beckn:offerAttributes": {
+            "opun:employmentTerms": {
+              "opun:joiningDate": "2026-04-01",
+              "opun:probationPeriod": "P3M"
+            }
+          },
+          "beckn:price": {
+            "schema:price": 600000,
+            "schema:priceCurrency": "INR"
+          },
+          "beckn:provider": {
+            "beckn:id": "PRV_1766398782_74c3029b"
+          }
+        }
+      ],
+      "beckn:buyer": {
+        "@type": "beckn:Buyer",
+        "beckn:displayName": "Vikram Tarniprasad Acharya",
+        "beckn:email": "vikram@plotch.ai",
+        "beckn:id": "CUST_1767703710_70c4fb03",
+        "beckn:telephone": "9833933345"
+      },
+      "beckn:fulfillment": {
+        "@type": "beckn:Fulfillment",
+        "beckn:deliveryAttributes": {
+          "@type": "opun:LivelihoodFulfillmentAttributes",
+          "opun:applicationStatus": "OFFERED",
+          "opun:attachments": [
+            {
+              "opun:base64": "JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgaHR0cDovL3d3dy5yZXBvcnRsYWIuY29tCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjEgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9CYXNlRm9udCAvU1RTb25nLUxpZ2h0IC9EZXNjZW5kYW50Rm9udHMgWyA8PAovQmFzZUZvbnQgL1NUU29uZy1MaWdodCAvQ0lEU3lzdGVtSW5mbyA8PAovT3JkZXJpbmcgKEdCMSkgL1JlZ2lzdHJ5IChBZG9iZSkgL1N1cHBsZW1lbnQgMAo+PiAvRFcgMTAwMCAvRm9udERlc2NyaXB0b3IgPDwKL0FzY2VudCA3NTIgL0NhcEhlaWdodCA3MzcgL0Rlc2NlbnQgLTI3MSAvRmxhZ3MgNiAvRm9udEJCb3ggWyAtMjUgLTI1NCAxMDAwIDg4MCBdIC9Gb250TmFtZSAvU1RTb25nU3RkLUxpZ2h0IAogIC9JdGFsaWNBbmdsZSAwIC9MZWFkaW5nIDE0OCAvTWF4V2lkdGggMTAwMCAvTWlzc2luZ1dpZHRoIDUwMCAvU3RlbUggOTEgL1N0ZW1WIDU4IAogIC9UeXBlIC9Gb250RGVzY3JpcHRvciAvWEhlaWdodCA1NTMKPj4gL1N1YnR5cGUgL0NJREZvbnRUeXBlMCAvVHlwZSAvRm9udCAKICAvVyBbIDEgWyAyMDcgMjcwIDM0MiA0NjcgNDYyIDc5NyA3MTAgMjM5IDM3NCBdIDEwIFsgMzc0IDQyMyA2MDUgMjM4IDM3NSAyMzggMzM0IDQ2MiBdIDE4IDI2IDQ2MiAyNyAyOCAyMzggCiAgMjkgMzEgNjA1IDMyIFsgMzQ0IDc0OCA2ODQgNTYwIDY5NSA3MzkgNTYzIDUxMSA3MjkgNzkzIAogIDMxOCAzMTIgNjY2IDUyNiA4OTYgNzU4IDc3MiA1NDQgNzcyIDYyOCAKICA0NjUgNjA3IDc1MyA3MTEgOTcyIDY0NyA2MjAgNjA3IDM3NCAzMzMgCiAgMzc0IDYwNiA1MDAgMjM5IDQxNyA1MDMgNDI3IDUyOSA0MTUgMjY0IAogIDQ0NCA1MTggMjQxIDIzMCA0OTUgMjI4IDc5MyA1MjcgNTI0IF0gODEgWyA1MjQgNTA0IDMzOCAzMzYgMjc3IDUxNyA0NTAgNjUyIDQ2NiA0NTIgCiAgNDA3IDM3MCAyNTggMzcwIDYwNSBdIF0KPj4gXSAvRW5jb2RpbmcgL1VuaUdCLVVDUzItSCAvTmFtZSAvRjIgL1N1YnR5cGUgL1R5cGUwIC9UeXBlIC9Gb250Cj4+CmVuZG9iago0IDAgb2JqCjw8Ci9Db250ZW50cyA4IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFyZW50IDcgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjUgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyA3IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNiAwIG9iago8PAovQXV0aG9yIChcKGFub255bW91c1wpKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYwMjEwMDgxNzI4KzAwJzAwJykgL0NyZWF0b3IgKFwodW5zcGVjaWZpZWRcKSkgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYwMjEwMDgxNzI4KzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSB3d3cucmVwb3J0bGFiLmNvbSkgCiAgL1N1YmplY3QgKFwodW5zcGVjaWZpZWRcKSkgL1RpdGxlIChcKGFub255bW91c1wpKSAvVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0NvdW50IDEgL0tpZHMgWyA0IDAgUiBdIC9UeXBlIC9QYWdlcwo+PgplbmRvYmoKOCAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCA4MDEKPj4Kc3RyZWFtCkdhdUhJPyZ0Rk4mOk86U2JiTm9calJWXVBaLjJRLEVOUUA9MD07cyY6aGRvKSJgOlJEb2pyJTVpKzJyPFZQdGdnUVRJIVlxLFdTYDUhbjZZLEoiN3JHVjtUKSdXYWwuUlJQJlctOi4qcy1WZyw1OCQzXENTaT80NE1jLTNANiwpVEtbSzpRKjZVPWFuKSdoPywxKDdiTTkxSEQnY21hZS4jbEA4I2YsImlaX14hJ2hARUw5NCtHTCxVMSUmV14hPGktVl1hJU9gcjtbNCc8QmJ0NSRDOlZwWHNQJyQ0TUBISDNzRyhEUiNePGczbDI5X0Z0R2dgUHFJIiNQUVRrT2MjaDYmLnI0W1tJKzNLKyFxaUxLKjdxbC0uVWYjTVxoKEk4XCxQNVNhQTMzTEw0bk0kOFgmUlwpLGMxakslYiFuZGktWEw4NWpuRyYqNGZfJEpdMiRjXUJJX3JCWGhXKC0rYWAkP0ZjZ0MwNmJYKUBrbD1Na1FLOm1NOTNQPFJQJlEiUmhDSklZTEdxcUM2OUdYYzMiPjV1V0QiWnQ0V2dldWJzaD9EViFmJ0lAVXBfP0xjP2lGcmU5JSFWOjhFLE9kV1E6ZlxMbWFbIUBJLUZDPU40VGY7PlBDUXVtSGRadTBLSFN0NEE6TGxSJi9TXW0kPEtrTXQ4LipQNVNrOCotLD5WWmkyTXVQMXA/VC9wKWFVWGo/Nm00TmJgUEQ1NyJkQzAjUSIqX0dJSzEhUGEzW2o6RyM0ZkwoM2E4J2c0JjtGbS5DcmM1JlFuOUszYTNjJyhWYCE7LHEtaSRvSVNwXW9PRzNsSF9fdWhZUGtvaEtrPUpObSY+J1pTLyYwWDxaI3JdK3JmbTFIMkc6L1hDb19eUT4rVzdmJ1A2Q1szZStmVkJbPXJRND1FQz49dVBuT2grRF0vSVBrckYiZiopMjVyRC1ebnU7JEluR2UpNm86KXNnKEohWFgpNjRvXUlnamtiWCZgZzUzKnNwX11HcGpAb1xbXmJLamguWF8+dSQ5RkdHN0YmN1Q0VTt0bUteS3MubGY4XE8iOVF1MTR+PmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDkKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDczIDAwMDAwIG4gCjAwMDAwMDAxMTQgMDAwMDAgbiAKMDAwMDAwMDIyMSAwMDAwMCBuIAowMDAwMDAxMTU0IDAwMDAwIG4gCjAwMDAwMDEzNTcgMDAwMDAgbiAKMDAwMDAwMTQyNSAwMDAwMCBuIAowMDAwMDAxNzA4IDAwMDAwIG4gCjAwMDAwMDE3NjcgMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8NzM2M2Y1MDJjNDA2ZWU0YzEyZmFiMGVhM2U5N2NhYTM+PDczNjNmNTAyYzQwNmVlNGMxMmZhYjBlYTNlOTdjYWEzPl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3QgKGh0dHA6Ly93d3cucmVwb3J0bGFiLmNvbSkKCi9JbmZvIDYgMCBSCi9Sb290IDUgMCBSCi9TaXplIDkKPj4Kc3RhcnR4cmVmCjI2NTgKJSVFT0YK",
+              "opun:description": "Offer Letter.pdf",
+              "opun:mimeType": "application/pdf",
+              "opun:name": "Offer Letter.pdf"
+            }
+          ],
+          "opun:notes": "Congratulation! Attached is your offer",
+          "opun:offerInstructions": "Congratulation! Attached is your offer"
+        },
+        "beckn:fulfillmentStatus": "OFFERED",
+        "beckn:id": "APP_1773068481_14e94076",
+        "beckn:mode": "DIGITAL"
+      },
+      "beckn:id": "APP_1773068481_14e94076",
+      "beckn:orderAttributes": {
+        "@type": "opun:LivelihoodApplicationAttributes",
+        "opun:applicationId": "APP_1773068481_14e94076",
+        "opun:appliedDate": "2026-03-09T00:00:00Z"
+      },
+      "beckn:orderItems": [
+        {
+          "@type": "beckn:Item",
+          "beckn:orderedItem": {
+            "beckn:id": "REQ_1769006173_df4729e9",
+            "beckn:provider": {
+              "beckn:id": "PRV_1766398782_74c3029b"
+            }
+          }
+        }
+      ],
+      "beckn:orderStatus": "ACTIVE",
+      "beckn:seller": {
+        "@type": "beckn:Party",
+        "beckn:id": "PRV_1766398782_74c3029b"
+      }
+    },
+    "updateType": "STATUS_UPDATE"
+  }
+}

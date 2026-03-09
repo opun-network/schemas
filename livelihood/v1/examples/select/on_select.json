@@ -1,0 +1,108 @@
+{
+  "context": {
+    "action": "on_select",
+    "bap_id": "bap.opungram.com",
+    "bap_uri": "https://bap-api.opungram.com/agache/agent/network/",
+    "bpp_id": "bpp.opunseva.com",
+    "bpp_uri": "https://bpp-api.opunseva.com/agache/agent/network/",
+    "domain": "opun:livelihood",
+    "message_id": "66602478-aca9-4172-ac49-5f9831d5f5a7",
+    "timestamp": "2026-03-09T20:30:53.123538+05:30",
+    "transaction_id": "9a4d2235-fcde-4d55-af37-20d98a4818fc",
+    "ttl": "PT30S",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "@context": [
+        "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+        "https://raw.githubusercontent.com/opun/opunnetwork-specification/main/schema/livelihood/v1/context.jsonld"
+      ],
+      "@type": "beckn:Order",
+      "beckn:fulfillment": {
+        "@type": "beckn:Fulfillment",
+        "beckn:fulfillmentStatus": "PENDING",
+        "beckn:id": "REQ_1769006173_df4729e9",
+        "beckn:mode": "DIGITAL"
+      },
+      "beckn:id": "REQ_1769006173_df4729e9",
+      "beckn:orderItems": [
+        {
+          "@type": "opun:JobOpportunity",
+          "beckn:orderedItem": {
+            "beckn:descriptor": {
+              "beckn:longDesc": "Perform duties as Accountant with inclusive workplace support",
+              "beckn:shortDesc": "Accountant",
+              "schema:name": "Accountant - Hearing Disability #6"
+            },
+            "beckn:id": "REQ_1769006173_df4729e9",
+            "beckn:provider": {
+              "beckn:descriptor": {
+                "schema:name": "Tech Supplies Inc"
+              },
+              "beckn:id": "PRV_1766398782_74c3029b"
+            },
+            "beckn:xinput": {
+              "beckn:form": {
+                "beckn:data": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xf:model xmlns:xf=\"http://www.w3.org/2002/xforms\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n  <xf:instance id=\"form-data\">\n    <data xmlns=\"\">\n      <job_title></job_title>\n      <full_name></full_name>\n      <email></email>\n      <phone></phone>\n      <current_location></current_location>\n      <total_experience></total_experience>\n      <current_role_summary></current_role_summary>\n      <primary_skills></primary_skills>\n      <notice_period></notice_period>\n      <willing_to_relocate></willing_to_relocate>\n      <expected_salary></expected_salary>\n      <role_question_1></role_question_1>\n      <resume></resume>\n    </data>\n  </xf:instance>\n  <xf:bind nodeset=\"/data/job_title\" type=\"xsd:string\" required=\"true()\"/>\n  <xf:bind nodeset=\"/data/full_name\" type=\"xsd:string\" required=\"true()\"/>\n  <xf:bind nodeset=\"/data/email\" type=\"xsd:string\" required=\"true()\"/>\n  <xf:bind nodeset=\"/data/phone\" type=\"xsd:string\" required=\"true()\"/>\n  <xf:bind nodeset=\"/data/current_location\" type=\"xsd:string\" required=\"true()\"/>\n  <xf:bind nodeset=\"/data/total_experience\" type=\"xsd:string\" required=\"true()\" constraint=\". &gt;= 0 and . &lt;= 50\"/>\n  <xf:bind nodeset=\"/data/current_role_summary\" type=\"xsd:string\" constraint=\"string-length(.) &gt;= 50 and string-length(.) &lt;= 500\"/>\n  <xf:bind nodeset=\"/data/primary_skills\" type=\"xsd:string\" required=\"true()\"/>\n  <xf:bind nodeset=\"/data/notice_period\" type=\"xsd:string\"/>\n  <xf:bind nodeset=\"/data/willing_to_relocate\" type=\"xsd:boolean\"/>\n  <xf:bind nodeset=\"/data/expected_salary\" type=\"xsd:string\"/>\n  <xf:bind nodeset=\"/data/role_question_1\" type=\"xsd:string\" constraint=\"string-length(.) &gt;= 50 and string-length(.) &lt;= 800\"/>\n  <xf:bind nodeset=\"/data/resume\" type=\"xsd:string\"/>\n</xf:model>\n<xf:group>\n  <xf:label>Employee Job Application Form</xf:label>\n    <xf:input ref=\"/data/job_title\">\n      <xf:label>Selected Job Title</xf:label>\n    </xf:input>\n    <xf:input ref=\"/data/full_name\">\n      <xf:label>Full Name</xf:label>\n    </xf:input>\n    <xf:input ref=\"/data/email\">\n      <xf:label>Email Address</xf:label>\n    </xf:input>\n    <xf:input ref=\"/data/phone\">\n      <xf:label>Phone Number</xf:label>\n    </xf:input>\n    <xf:input ref=\"/data/current_location\">\n      <xf:label>Current Location</xf:label>\n    </xf:input>\n    <xf:input ref=\"/data/total_experience\">\n      <xf:label>Total Years of Professional Experience</xf:label>\n    </xf:input>\n    <xf:textarea ref=\"/data/current_role_summary\">\n      <xf:label>Current Role / Key Responsibilities (Brief)</xf:label>\n    </xf:textarea>\n    <xf:select ref=\"/data/primary_skills\">\n      <xf:label>Primary Skills Relevant to This Role</xf:label>\n      <xf:item>\n        <xf:label>Python</xf:label>\n        <xf:value>python</xf:value>\n      </xf:item>\n      <xf:item>\n        <xf:label>Java</xf:label>\n        <xf:value>java</xf:value>\n      </xf:item>\n      <xf:item>\n        <xf:label>JavaScript</xf:label>\n        <xf:value>javascript</xf:value>\n      </xf:item>\n      <xf:item>\n        <xf:label>React</xf:label>\n        <xf:value>react</xf:value>\n      </xf:item>\n      <xf:item>\n        <xf:label>SQL</xf:label>\n        <xf:value>sql</xf:value>\n      </xf:item>\n    </xf:select>\n    <xf:select1 ref=\"/data/notice_period\">\n      <xf:label>Notice Period</xf:label>\n      <xf:item>\n        <xf:label>Immediate</xf:label>\n        <xf:value>immediate</xf:value>\n      </xf:item>\n      <xf:item>\n        <xf:label>15 Days</xf:label>\n        <xf:value>15_days</xf:value>\n      </xf:item>\n      <xf:item>\n        <xf:label>30 Days</xf:label>\n        <xf:value>30_days</xf:value>\n      </xf:item>\n      <xf:item>\n        <xf:label>60 Days</xf:label>\n        <xf:value>60_days</xf:value>\n      </xf:item>\n    </xf:select1>\n    <xf:select1 ref=\"/data/willing_to_relocate\" appearance=\"full\">\n      <xf:label>Willing to Relocate?</xf:label>\n      <xf:item>\n        <xf:label>Yes</xf:label>\n        <xf:value>True</xf:value>\n      </xf:item>\n      <xf:item>\n        <xf:label>No</xf:label>\n        <xf:value>False</xf:value>\n      </xf:item>\n    </xf:select1>\n    <xf:input ref=\"/data/expected_salary\">\n      <xf:label>Expected Salary</xf:label>\n    </xf:input>\n    <xf:textarea ref=\"/data/role_question_1\">\n      <xf:label>What interests you most about this role?</xf:label>\n    </xf:textarea>\n    <xf:upload ref=\"/data/resume\">\n      <xf:label>Upload Resume</xf:label>\n    </xf:upload>\n</xf:group>"
+              }
+            },
+            "opun:accessibilityMetadata": {
+              "providedAccommodations": {
+                "support": [
+                  "Flexible hours",
+                  "Remote work options"
+                ],
+                "tech": [
+                  "Assistive tools as required"
+                ]
+              },
+              "suitableDisabilityTypes": [
+                {
+                  "category": "Hearing Disability",
+                  "code": "HEARING_HARD_OF_HEARING",
+                  "fitLevel": "High Match",
+                  "notes": "Role adapted for Hearing Disability"
+                }
+              ]
+            },
+            "opun:benefits": "Health insurance, Remote work options",
+            "opun:employmentType": "PERMANENT",
+            "opun:experienceRequired": {
+              "opun:maximumYears": 2,
+              "opun:minimumYears": 2
+            },
+            "opun:jobCode": "REQ_1769006173_df4729e9",
+            "opun:requiredQualifications": [
+              "Bachelor's Degree"
+            ],
+            "opun:responsibilities": "Perform duties as Accountant with inclusive workplace support",
+            "opun:salaryRange": {
+              "opun:currency": "INR",
+              "opun:maximum": 794802,
+              "opun:minimum": 454919
+            },
+            "opun:skills": [
+              "Tally",
+              "Excel",
+              "GST"
+            ],
+            "opun:vacancies": 1,
+            "opun:workMode": "HYBRID"
+          }
+        }
+      ],
+      "beckn:orderStatus": "DRAFT",
+      "beckn:quote": {
+        "beckn:price": {
+          "beckn:currency": "INR",
+          "beckn:value": 454919
+        }
+      },
+      "beckn:seller": {
+        "@type": "beckn:Party",
+        "beckn:id": "PRV_1766398782_74c3029b"
+      }
+    }
+  }
+}

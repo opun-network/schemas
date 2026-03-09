@@ -101,6 +101,7 @@
       "rdfs:label": "Application Status",
       "rdfs:comment": "Status of a job application in the recruitment process",
       "schema:enumeration": [
+        "DRAFT",
         "APPLICATION_SUBMITTED",
         "APPLICATION_RECEIVED",
         "APPLICATION_UNDER_REVIEW",
@@ -598,8 +599,12 @@
       "@id": "livelihood:notes",
       "@type": "rdf:Property",
       "rdfs:label": "Notes",
-      "rdfs:comment": "Additional notes or comments",
-      "schema:domainIncludes": "livelihood:SuitableDisabilityType",
+      "rdfs:comment": "Additional notes or comments. May be used on accessibility fit (SuitableDisabilityType), fulfillment (e.g. provider/candidate notes), or order attributes.",
+      "schema:domainIncludes": [
+        "livelihood:SuitableDisabilityType",
+        "livelihood:LivelihoodFulfillmentAttributes",
+        "livelihood:LivelihoodApplicationAttributes"
+      ],
       "schema:rangeIncludes": "xsd:string"
     },
 
@@ -718,6 +723,24 @@
       "rdfs:comment": "Payment frequency or period",
       "schema:domainIncludes": ["livelihood:SalaryRange", "livelihood:SalaryBreakup"],
       "schema:rangeIncludes": "xsd:string"
+    },
+
+    {
+      "@id": "livelihood:formId",
+      "@type": "rdf:Property",
+      "rdfs:label": "Form ID",
+      "rdfs:comment": "Unique identifier of the application form",
+      "schema:domainIncludes": "livelihood:ApplicationForm",
+      "schema:rangeIncludes": "xsd:string"
+    },
+
+    {
+      "@id": "livelihood:formUrl",
+      "@type": "rdf:Property",
+      "rdfs:label": "Form URL",
+      "rdfs:comment": "URL of the application form",
+      "schema:domainIncludes": "livelihood:ApplicationForm",
+      "schema:rangeIncludes": "xsd:anyURI"
     },
 
     {
@@ -847,12 +870,26 @@
     },
 
     {
+      "@id": "livelihood:FormVerificationStatus",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Form Verification Status",
+      "rdfs:comment": "Status of form verification by provider",
+      "schema:enumeration": [
+        "VALID",
+        "VERIFIED",
+        "PENDING",
+        "REJECTED",
+        "REQUIRES_CORRECTION"
+      ]
+    },
+
+    {
       "@id": "livelihood:formVerificationStatus",
       "@type": "rdf:Property",
       "rdfs:label": "Form Verification Status",
       "rdfs:comment": "Status of form verification by provider",
       "schema:domainIncludes": "livelihood:LivelihoodFulfillmentAttributes",
-      "schema:rangeIncludes": "xsd:string"
+      "schema:rangeIncludes": "livelihood:FormVerificationStatus"
     },
 
     {

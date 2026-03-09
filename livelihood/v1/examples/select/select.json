@@ -1,0 +1,45 @@
+{
+  "context": {
+    "action": "select",
+    "bap_id": "bap.opungram.com",
+    "bap_uri": "https://bap-api.opungram.com/agache/agent/network/",
+    "bpp_id": "bpp.opunseva.com",
+    "bpp_uri": "https://bpp-api.opunseva.com/agache/agent/network/",
+    "domain": "opun:livelihood",
+    "message_id": "66602478-aca9-4172-ac49-5f9831d5f5a7",
+    "timestamp": "2026-03-09T20:30:50.330763+05:30",
+    "transaction_id": "9a4d2235-fcde-4d55-af37-20d98a4818fc",
+    "ttl": "PT30S",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "@context": [
+        "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+        "https://raw.githubusercontent.com/opun/opunnetwork-specification/main/schema/livelihood/v1/context.jsonld"
+      ],
+      "@type": "beckn:Order",
+      "beckn:fulfillment": {
+        "@type": "beckn:Fulfillment",
+        "beckn:category": "JOB_APPLICATION",
+        "beckn:id": "REQ_1769006173_df4729e9",
+        "beckn:mode": "DIGITAL"
+      },
+      "beckn:orderItems": [
+        {
+          "beckn:orderedItem": {
+            "@type": "opun:JobOpportunity",
+            "beckn:id": "REQ_1769006173_df4729e9",
+            "beckn:provider": {
+              "beckn:id": "PRV_1769696624_fde9c424"
+            }
+          }
+        }
+      ],
+      "beckn:seller": {
+        "@type": "beckn:Party",
+        "beckn:id": "PRV_1769696624_fde9c424"
+      }
+    }
+  }
+}
