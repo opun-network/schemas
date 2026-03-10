@@ -16,6 +16,8 @@ All extensions use **JSON-LD** with alignment to [schema.org](https://schema.org
 ```
 schemas/
 ├── README.md                 # This file
+├── docs/                     # Documentation for reviewers and implementers
+│   └── USER_STORIES_LIVELIHOOD.md  # User stories and payload mapping (livelihood)
 ├── learning/                 # Learning domain (courses, enrollments, certificates)
 │   └── v1/
 │       ├── schema-extension/ # context.jsonld, vocab.jsonld, attributes.yaml
@@ -42,6 +44,10 @@ Each domain version contains:
   - `vocab.jsonld` — RDF vocabulary and type definitions
   - `attributes.yaml` — Domain-specific attributes and scopes (Item, Fulfillment, etc.)
 - **examples/** — Sample request/response payloads for each Beckn 2.0 flow (e.g. search, on_search, init, on_init).
+
+## Documentation
+
+- **[User stories and payload mapping (Livelihood)](docs/USER_STORIES_LIVELIHOOD.md)** — User stories for job seeker and employer, flow-to-file mapping, and update variants. 
 
 ## Using the Schemas
 
