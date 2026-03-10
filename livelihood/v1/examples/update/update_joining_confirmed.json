@@ -6,28 +6,37 @@
     "bpp_id": "bpp.opunseva.com",
     "bpp_uri": "https://bpp-api.opunseva.com/agache/agent/network/",
     "domain": "opun:livelihood",
-    "message_id": "a1b2c3d4-e5f6-4789-a012-345678901234",
-    "timestamp": "2026-03-09T20:38:00.000000+05:30",
+    "message_id": "f6a7b8c9-d0e1-4234-f567-890123456789",
+    "timestamp": "2026-03-09T20:44:00.000000+05:30",
     "transaction_id": "APP_1773068481_14e94076",
     "ttl": "PT30S",
     "version": "2.0.0"
   },
   "message": {
-    "updateType": "BUYER_CONTACT_UPDATE",
+    "updateType": "JOINING_CONFIRMED",
     "order": {
       "@type": "beckn:Order",
       "beckn:id": "APP_1773068481_14e94076",
       "beckn:buyer": {
         "@type": "beckn:Buyer",
         "beckn:displayName": "Vikram Tarniprasad Acharya",
-        "beckn:email": "vikram.new@plotch.ai",
+        "beckn:email": "vikram@plotch.ai",
         "beckn:id": "CUST_1767703710_70c4fb03",
-        "beckn:telephone": "9833933346"
+        "beckn:telephone": "9833933345"
       },
       "beckn:fulfillment": {
         "@type": "beckn:Fulfillment",
         "beckn:id": "APP_1773068481_14e94076",
         "beckn:mode": "DIGITAL"
+      },
+      "beckn:orderAttributes": {
+        "@type": "opun:LivelihoodApplicationAttributes",
+        "opun:applicationId": "APP_1773068481_14e94076",
+        "opun:appliedDate": "2026-03-09T00:00:00Z",
+        "opun:joiningConfirmation": {
+          "opun:confirmedAt": "2026-03-09T20:44:00+05:30",
+          "opun:joiningDate": "2026-04-01"
+        }
       }
     }
   }
